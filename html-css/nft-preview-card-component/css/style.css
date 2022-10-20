@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: rgb(13, 25, 43);
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(20, 37, 61);
+  border-radius: 14px;
+  box-shadow: 0px 20px 0px 15px rgba(6, 13, 23, 0.179);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.card .panel {
+  background-color: rgba(0, 255, 247, 0.5);
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 5%;
+  left: 9%;
+  border-radius: 9px;
+  opacity: 0;
+}
+.card .icon-view {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card .img-nft {
+  width: 250px;
+  height: 250px;
+  border-radius: 9px;
+  margin: 25px 0px;
+}
+.card .img-content:hover .panel {
+  opacity: 1;
+}
+.card .description {
+  width: 85%;
+  height: 100px;
+  padding: 0px 1px;
+}
+.card .description .nft-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.card .description .nft-name.nft-name:hover {
+  color: rgb(0, 255, 247);
+}
+.card .description .nft-desc {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: rgb(139, 172, 218);
+}
+.card .price-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  height: 15px;
+  margin-bottom: 15px;
+}
+.card .price-time .infos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .price-time .infos .icon-ethereum {
+  width: 10px;
+  height: 15px;
+  margin-right: 5px;
+}
+.card .price-time .infos .icon-clock {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.card .price-time .infos .price {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgb(0, 255, 247);
+}
+.card .price-time .infos .time {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(139, 172, 218);
+}
+.card hr {
+  width: 85%;
+  margin: 5px 0px;
+  border: solid 0.2px rgb(47, 65, 91);
+  background-color: rgb(47, 65, 91);
+}
+.card .creator-info {
+  width: 85%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0px;
+}
+.card .creator-info img {
+  width: 25px;
+  height: 25px;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.card .creator-info h2 {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: rgb(139, 172, 218);
+}
+.card .creator-info h2 .creator-name {
+  color: rgb(255, 255, 255);
+}
+.card .creator-info h2 .creator-name:hover {
+  color: rgb(0, 255, 247);
+}
+
+/*# sourceMappingURL=style.css.map */
