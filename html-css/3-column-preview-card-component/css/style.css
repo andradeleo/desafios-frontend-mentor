@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(242, 242, 242);
+  font-size: 15px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-container {
+  width: 900px;
+  height: 450px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "sedans suvs luxury";
+}
+.main-container .sedans {
+  background-color: rgb(227, 136, 38);
+  border-radius: 9px 0px 0px 9px;
+}
+.main-container .suvs {
+  background-color: rgb(0, 105, 112);
+}
+.main-container .luxury {
+  background-color: rgb(0, 66, 65);
+  border-radius: 0px 9px 9px 0px;
+}
+.main-container .sedans, .main-container .suvs, .main-container .luxury {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .sedans .content, .main-container .suvs .content, .main-container .luxury .content {
+  width: 60%;
+  height: 80%;
+}
+.main-container .sedans .content .text-content, .main-container .suvs .content .text-content, .main-container .luxury .content .text-content {
+  margin-top: 30px;
+  margin-bottom: 40%;
+}
+.main-container .sedans .content .text-content .category, .main-container .suvs .content .text-content .category, .main-container .luxury .content .text-content .category {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(242, 242, 242);
+  margin-bottom: 20px;
+}
+.main-container .sedans .content .text-content .desc, .main-container .suvs .content .text-content .desc, .main-container .luxury .content .text-content .desc {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.3rem;
+}
+.main-container .sedans .content .btn-learn-more, .main-container .suvs .content .btn-learn-more, .main-container .luxury .content .btn-learn-more {
+  width: 140px;
+  height: 45px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 25px;
+  border: none;
+}
+.main-container .sedans .content .btn-learn-more:hover, .main-container .suvs .content .btn-learn-more:hover, .main-container .luxury .content .btn-learn-more:hover {
+  background-color: transparent;
+  border: 2px solid rgb(242, 242, 242);
+  color: rgb(242, 242, 242);
+}
+.main-container .sedans .content .sedans-btn, .main-container .suvs .content .sedans-btn, .main-container .luxury .content .sedans-btn {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(227, 136, 38);
+}
+.main-container .sedans .content .suvs-btn, .main-container .suvs .content .suvs-btn, .main-container .luxury .content .suvs-btn {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(0, 105, 112);
+}
+.main-container .sedans .content .luxury-btn, .main-container .suvs .content .luxury-btn, .main-container .luxury .content .luxury-btn {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(0, 66, 65);
+}
+
+@media only screen and (max-width: 635px) {
+  body {
+    height: 220vh;
+  }
+  .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+  }
+  .main-container .sedans {
+    background-color: rgb(227, 136, 38);
+    border-radius: 9px 9px 0px 0px;
+  }
+  .main-container .luxury {
+    background-color: rgb(0, 66, 65);
+    border-radius: 0px 0px 9px 9px;
+  }
+  .main-container .btn-learn-more {
+    margin-bottom: 120px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
